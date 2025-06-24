@@ -2616,12 +2616,6 @@ function setupAutosave() {
 				]
 			});
 
-
-monaco.editor.create(document.getElementById("container"), {
-  fontFamily: "Poppins"
-});
-
-
 			
 			editor = monaco.editor.create(document.getElementById('container'), {
 				language: 'lua',
@@ -2629,6 +2623,7 @@ monaco.editor.create(document.getElementById("container"), {
 				acceptSuggestionOnEnter: "smart",
 				cursorSmoothCaretAnimation: true,
 				suggestOnTriggerCharacters: true,
+				fontFamily: "Poppins",
 				suggestSelection: "recentlyUsed",
 				folding: true,
 					dragAndDrop: true,
