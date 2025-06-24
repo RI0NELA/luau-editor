@@ -2614,6 +2614,14 @@ function setupAutosave() {
 				]
 			});
 
+
+monaco.editor.create(document.getElementById("container"), {
+  language: "javascript",
+  theme: "net-theme-dark",
+  fontFamily: "Poppins"
+});
+
+			
 			editor = monaco.editor.create(document.getElementById('container'), {
 				language: 'lua',
 				theme: "net-theme-dark",
