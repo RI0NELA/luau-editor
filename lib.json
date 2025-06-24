@@ -97,6 +97,12 @@
           "description": "Loads chunk as a Lua function with optional chunk_name and returns it if compilation is successful.\nOtherwise, if an error has occurred during compilation, nil followed by the error message will be returned.",
           "insert": "loadstring"
       },
+      "secret": {
+          "label": "secret(date);",
+          "type": "Method",
+          "description": "This is a secret. :)",
+          "insert": "secret()"
+      },
       "setthreadcontext": {
           "label": "setthreadcontext(level);",
           "type": "Method",
