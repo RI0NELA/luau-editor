@@ -2469,7 +2469,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = ""; // to add any default text. but for me. i dont want it    
+    const defaultText = "-- In Development"; // to add any default text. but for me. i dont want it    
     if (!content) {
         content = defaultText;
     }
@@ -2532,7 +2532,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "" : tab.content;        editor.setValue(contentToSet); // to add any default text. but for me. i dont want it  
+        const contentToSet = tab.content.trim() === '' ? "-- In Development" : tab.content;        editor.setValue(contentToSet); // to add any default text. but for me. i dont want it  
         tab.element.classList.add('active');
         currentTab = tabId;
     }
